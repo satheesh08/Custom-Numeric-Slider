@@ -1,0 +1,8 @@
+<template>
+  <div class="input-row">
+    <div class="slds-box slds-theme_default" style="margin-top: 10px;">
+      <label class="slds-form-element__label">Show (0 to {maxValue})</label>
+      <input type="range" min="20" max={maxValue} value={currentValue} onchange={handleSliderChange} oninput={handleSliderInput} class="slds-slider" />
+      <div class="slider-value slds-m-top_small">{formattedValue}</div>
+    </div>
+</template>
